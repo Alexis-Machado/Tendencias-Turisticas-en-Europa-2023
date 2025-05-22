@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EA2. CASO DE ESTUDIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.animate-fade-in').forEach(el => {
+        el.classList.add('opacity-0');
+        setTimeout(() => el.classList.remove('opacity-0'), 300);
+      });
+    });
+  </script>
+</head>
+
+<body
+  class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-cyan-200 text-gray-900">
+
+  <!-- Botones superior izquierdo (más abajo y más pequeños) -->
+  <div class="fixed top-16 left-4 z-50 animate-fade-in transition-opacity duration-1000 flex flex-col space-y-1">
+    <!-- Mapa de Viajes -->
+    <a href="interfaz/mapa_viajes_interactivo.html" target="_blank"
+      class="flex items-center px-1 py-0.5 bg-green-500 text-white text-[0.65rem] font-semibold rounded shadow 
+             hover:scale-105 hover:bg-green-700 transition transform duration-300">
+      <i class="fas fa-map-marked-alt mr-1 text-[0.65rem]"></i>
+      MAPA DE VIAJES
+    </a>
+    <!-- Tabla completa de viajes -->
+    <a href="interfaz/tabla_viajes_completa.html" target="_blank"
+      class="flex items-center px-1 py-0.5 bg-yellow-500 text-white text-[0.65rem] font-semibold rounded shadow 
+             hover:scale-105 hover:bg-yellow-700 transition transform duration-300">
+      <i class="fas fa-table mr-1 text-[0.65rem]"></i>
+      TABLA COMPLETA DE VIAJES
+    </a>
+    <!-- Gasto Diario Alojamiento -->
+    <a href="interfaz/gasto_diario_alojamiento_mejorado.html" target="_blank"
+      class="flex items-center px-1 py-0.5 bg-purple-500 text-white text-[0.65rem] font-semibold rounded shadow 
+             hover:scale-105 hover:bg-purple-700 transition transform duration-300">
+      <i class="fas fa-bed mr-1 text-[0.65rem]"></i>
+      GASTO DIARIO ALOJAMIENTO
+    </a>
+    <!-- Distribución de Valoraciones por País -->
+    <a href="interfaz/distribucion_valoraciones_por_pais_con_etiquetas.html" target="_blank"
+      class="flex items-center px-1 py-0.5 bg-red-500 text-white text-[0.65rem] font-semibold rounded shadow 
+             hover:scale-105 hover:bg-red-700 transition transform duration-300">
+      <i class="fas fa-star mr-1 text-[0.65rem]"></i>
+      DISTRIBUCIÓN DE VALORACIONES POR PAÍS
+    </a>
+  </div>
+
+  <!-- Título e imagen superior -->
+  <div class="flex items-center mb-3 animate-fade-in transition-opacity duration-1000">
+    <img src="https://i.ibb.co/d44xtMwk/IUD.png" alt="IUD" class="w-15 h-14 mr-4">
+    <h1 class="text-2xl font-bold text-black">
+      EA2. CASO DE ESTUDIO: ANÁLISIS DE LOS DIFERENTES TIPOS DE DATOS
+    </h1>
+  </div>
+
+  <!-- Contenedor con los botones inferiores -->
+  <div class="fixed bottom-0 left-0 flex gap-2 p-2 animate-fade-in transition-opacity duration-1000 z-50">
+    <a href="#" target="_blank"
+      class="flex items-center px-3 py-1 bg-blue-500 text-white text-sm rounded-lg shadow-lg 
+             hover:scale-105 hover:bg-blue-700 transition transform duration-300">
+      <i class="fas fa-file-alt mr-1 text-sm"></i>
+      <strong>EA2</strong>
+    </a>
+    <a href="https://drive.google.com/file/d/1zRiky4CV0TWL3Z3VtyTesWqeVYIBKbU8/view?usp=sharing" target="_blank"
+      class="flex items-center px-3 py-1 bg-blue-500 text-white text-sm rounded-lg shadow-lg 
+             hover:scale-105 hover:bg-blue-700 transition transform duration-300">
+      <i class="fas fa-chess-board mr-1 text-sm"></i>
+      <strong>DOWNLOAD DASHBOARD</strong>
+    </a>
+    <a href="https://app.powerbi.com/groups/me/insights/fbd6c680-5bc4-4b9f-bf0f-5ad39fadd4d7?experience=power-bi"
+      target="_blank"
+      class="flex items-center px-3 py-1 bg-blue-500 text-white text-sm rounded-lg shadow-lg 
+             hover:scale-105 hover:bg-blue-700 transition transform duration-300">
+      <i class="fas fa-chess-board mr-1 text-sm"></i>
+      <strong>CONCLUSIONES POWER BI ACCESS</strong>
+    </a>
+  </div>
+
+  <!-- Contenedor responsivo para el iframe (80% ancho, 16:9) -->
+  <div class="relative w-4/5 pt-[40.25%] mt-0 animate-fade-in transition-opacity duration-1000">
+    <iframe title="EA2 - Caso de estudio Análisis de los diferentes tipos de datos AlexisMachado_JuliánMartínez_QueniaVanegas"
+      class="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+      src="https://app.powerbi.com/view?r=eyJrIjoiZmUyNjY2MTItMDQzYi00ZGExLWIzMWItMjI2ZWEyNmU2MjVjIiwidCI6IjQ5N2U5MmViLWRhNTUtNDUwZC1hMWNlLTMxZmYyYWQ1ZmMwOCJ9&pageName=971f36391d17c517c05d"
+      frameborder="0" allowFullScreen>
+    </iframe>
+  </div>
+
+</body>
+
+</html>
